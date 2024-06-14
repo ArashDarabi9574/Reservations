@@ -5,7 +5,7 @@ from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 
 urlpatterns_api_v1 = [
-    
+        path('', include('reserve.urls_api'), name='reservations'),
 ]
 
 urlpatterns = [
